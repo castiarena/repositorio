@@ -1,2 +1,17 @@
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+//medidas para responsive
+
+$mobile-width-min: 320px;
+$mobile-width-max: 540px;
+
+$tablet-width-min: 540px;
+$tablet-width-max: 1024px;
+
+$desktop-width-min: 1024px;
+$desktop-width-max: 1280px;
+
+$wide-width-min: 1280px;
+$wide-width-max: 1920px;
+
 $color-body: #f4f4f4;
 $color-precios: #a13020;

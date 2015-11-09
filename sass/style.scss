@@ -1,8 +1,13 @@
 @import "../bower_components/chico/src/ui/styles/ui-theme";
 @import "../bower_components/chico/src/ui/styles/ui-theme";
-@import "../bower_components/casti-sass/sass/style";
-@import "../bower_components/casti-sass/sass/grid-set";
-@import "../bower_components/casti-sass/sass/scafollings";
+
+@import "variables";
+
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+
+@import "mixins-adds";
 
 @import "variables";
 @import "bg";
