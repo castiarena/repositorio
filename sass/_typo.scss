@@ -15,3 +15,9 @@
     color: $box-warning-text-color;
   }
 }
+
+.text{
+  &-center{
+    text-align: center;
+  }
+}

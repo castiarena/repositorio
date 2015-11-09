@@ -3,8 +3,8 @@ var PRODUCTO = {
     carousel: null,
     tabs: null,
     form: document.getElementById('comprar'),
+    ejercicio: $('button.ch-btn[property]'),
     init: function(){
-        this.setCarousel();
         this.setTabs();
         this.actions();
     },
@@ -15,16 +15,24 @@ var PRODUCTO = {
         this.tabs = $('#tabs').tabs();
     },
     actions: function(){
-        this.form.addEventListener('submit',function(e){
+        var self = this;
+        self.form.addEventListener('submit',function(e){
             e.preventDefault();
-            var statusBuy = $('.ch-box-ok[data-buy]');
-            statusBuy.html('Gracias por comprar un <b>'+ statusBuy.attr('data-buy').toUpperCase().replace(new RegExp('-'),' ')+'</b> en MercadoLibre');
+            var statusBuy = $('.ch-box-ok[property]');
+            statusBuy.html('Gracias por comprar un <b>'+ statusBuy.attr('property').toUpperCase().replace(new RegExp('-'),' ')+'</b> en MercadoLibre');
             statusBuy.fadeIn(function(){
                 setTimeout(function(){
                     statusBuy.fadeOut();
                 },500);
             });
+        });
 
+        self.ejercicio.on('click tap',function(e){
+            e.preventDefault();
+            var target = $(this).attr('property');
+            $(target).fadeIn(function () {
+                self.setCarousel();
+            });
         })
     }
 };
