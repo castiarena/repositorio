@@ -1,0 +1,8 @@
+.ch{
+  &-btn {
+    @include transition(all .2s linear);
+    @include mobile(){
+      width: 100%;
+    }
+  }
+}

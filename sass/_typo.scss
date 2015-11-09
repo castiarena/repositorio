@@ -1,0 +1,8 @@
+.title{
+  &-big{
+    font-size: 3em;
+    @include mobileTablet(){
+      font-size: 2em;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.img{
+  &-thumbnail{
+    @include border-radius(3px);
+  }
+  &-content{
+    border-right: 1px solid darken($color-body, 10%);
+    padding: 0 10px 10px 0;
+    @include mobileTablet(){
+      padding: 0;
+      border-right: 0;
+    }
+  }
+  &-figure{
+    @extend .img-thumbnail;
+    height: 480px;
+    display: table-cell;
+    vertical-align: middle;
+    @include mobileTablet(){
+      height: auto;
+      display: inline-block;
+    }
+  }
+  &-example{
+    background-color: #cccccc;
+    width: 120px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid darken($color-body,10%);
+    @include border-radius(3px);
+  }
+}
+
+
+body{
+  padding: 0;
+}
