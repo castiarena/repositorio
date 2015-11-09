@@ -6,3 +6,12 @@
     }
   }
 }
+
+.color{
+  &-ok{
+    color: $box-ok-text-color;
+  }
+  &-warn{
+    color: $box-warning-text-color;
+  }
+}

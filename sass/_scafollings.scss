@@ -12,13 +12,8 @@
   }
   &-figure{
     @extend .img-thumbnail;
-    height: 480px;
-    display: table-cell;
-    vertical-align: middle;
-    @include mobileTablet(){
-      height: auto;
-      display: inline-block;
-    }
+    height: auto;
+    display: inline-block;
   }
   &-example{
     background-color: #cccccc;
